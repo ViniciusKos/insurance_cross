@@ -1,2 +1,76 @@
-# health_insurance_cross_sell
-Our client is an Insurance company that has provided Health Insurance to its customers now they need your help in building a model to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company
+# Health Insurance Cross Sell Prediction 🏠 🏥
+
+
+![image](https://user-images.githubusercontent.com/73034020/181102567-2d26df7a-77c7-4ddf-b080-d6789ac4f87b.png)
+
+
+**Disclaimer**: this project was inspired by the "Health Insurance Cross Sell Prediction" challenge published on kaggle (https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction?sort=votes). Although it is a fictitious project it will follow all steps of a real project.
+
+## Business Issue
+Our client is an Insurance company that has provided Health Insurance to its customers now they need your help in building a model to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.
+
+## Solution methodology
+The resolution of the challenge was carried out following the CRISP-DM (CRoss-Industry Standard Process for data mining) methodology, which is a cyclical approach that streamlines the delivery of value to the business through fast and valuable MVPs.
+
+Benefits of Using CRISP-DM
+This method is cost-effective as it includes a number of processes to take out simple data mining tasks.
+CRISP-DM encourages best practices and allows projects to replicate.
+This methodology provides a uniform framework for planning and managing a project.
+Being cross-industry standard, CRISP-DM can be implemented in any Data Science project irrespective of its domain.
+
+For more details about CRISP-DM metodology: https://analyticsindiamag.com/why-is-crisp-dm-gaining-grounds/
+
+
+![image](https://user-images.githubusercontent.com/73034020/180753015-7945d745-3420-4fd0-9681-6487fb066c80.png)
+
+
+## Data collection
+The data was collected in Kaggle and all the columns attributes are explained below:
+
+![image](https://user-images.githubusercontent.com/73034020/181103285-42f2e0d6-38c0-498e-8ae3-37ec414b1054.png)
+
+
+
+For more detail about data, feel free to access the kaggle page:
+https://www.kaggle.com/competitions/rossmann-store-sales/data.
+
+## Data Understanding through mind map Hypotesis
+In this section we will list some hypothesis that can be tested using this data, these hypothesis generally comes from brainstorming 
+with business areas and are very important to drive our analyses.
+If they are not enough to explain the stores sales we would formulate new hypotheses and search for more data.
+
+Through the mind map, we can separe our hypothesis by factors (like Customer, Product etc...) and their attributes (Customer Age, Product Price, etc...)
+
+There are some hypotesis judged to be most relevant and could drive our Exploratory Data Analysis. They are listed below.
+
+1. Stores with larger assortments should sell more.
+2. Stores with closer competitors should sell less.
+3. Stores with longer competitors should sell more.
+4. Stores with longer active promotions should sell more.
+5. Stores with more promotion days should sell more.
+6. Stores with more agressive promotion should sell more
+7. Stores with more consecutive promotions should sell more.
+8. Stores open on the Christmas holiday should sell more.
+9. Stores should sell more over the years.
+10. Stores should sell more in the second half of the year.
+11. Stores should sell more after the 10th of each month.
+12. Stores should sell less on weekends.
+13. Stores should sell less during school holidays.
+
+Some of them might not be tested in advance for lack of information in this DataSet. Thus it can be tested in the next CRISP-DM circle.
+
+Below are the summary of three tested hypoteses.
+1. Stores with larger assortments should sell more -- TRUE
+
+![image](https://user-images.githubusercontent.com/73034020/180753446-e35fd0a4-9b15-44c5-80f7-3104ccbe1079.png)
+
+![image](https://user-images.githubusercontent.com/73034020/180751961-8b4593ec-df14-441b-afd7-b97414b57818.png)
+
+There is proportionally more sales in biggers assortments than the basic ones.
+
+1. Stores with larger assortments should sell more -- TRUE
+
+
+
+
+
