@@ -24,53 +24,32 @@ For more details about CRISP-DM metodology: https://analyticsindiamag.com/why-is
 ![image](https://user-images.githubusercontent.com/73034020/180753015-7945d745-3420-4fd0-9681-6487fb066c80.png)
 
 
-## Data collection
-The data was collected in Kaggle and all the columns attributes are explained below:
+My strategy to solve this challenge was:
+Step 01. Data Description:
+Step 02. Feature Engineering:
+Step 03. Data Filtering:
+Step 04. Exploratory Data Analysis:
+Step 05. Data Preparation:
+Step 06. Feature Selection:
+Step 07. Machine Learning Modelling:
+Step 08. Hyperparameter Fine Tunning:
+Step 09. Convert Model Performance to Business Values:
+Step 10. Deploy Model to Production:
 
-![image](https://user-images.githubusercontent.com/73034020/181103285-42f2e0d6-38c0-498e-8ae3-37ec414b1054.png)
+## Top 3 data insights
 
+### 1) Customers with driving license buys MORE insurance.
+There's a propensity increase of 135% (12% vs 5%)!
 
+![image](https://user-images.githubusercontent.com/73034020/187721686-03a03de8-b548-44e0-bb1e-b06ec36ee619.png)
 
-For more detail about data, feel free to access the kaggle page:
-https://www.kaggle.com/competitions/rossmann-store-sales/data.
+### 2) Underaged vehicles are more likely to be insured by customers.
 
-## Data Understanding through mind map Hypotesis
-In this section we will list some hypothesis that can be tested using this data, these hypothesis generally comes from brainstorming 
-with business areas and are very important to drive our analyses.
-If they are not enough to explain the stores sales we would formulate new hypotheses and search for more data.
+![image](https://user-images.githubusercontent.com/73034020/187724043-05f603f5-fec5-4d75-b30f-fe6629be9966.png)
 
-Through the mind map, we can separe our hypothesis by factors (like Customer, Product etc...) and their attributes (Customer Age, Product Price, etc...)
+### 3) Previously damaged vehicles are MUCH MORE LIKELY to be insured by customers.
 
-There are some hypotesis judged to be most relevant and could drive our Exploratory Data Analysis. They are listed below.
-
-1. Stores with larger assortments should sell more.
-2. Stores with closer competitors should sell less.
-3. Stores with longer competitors should sell more.
-4. Stores with longer active promotions should sell more.
-5. Stores with more promotion days should sell more.
-6. Stores with more agressive promotion should sell more
-7. Stores with more consecutive promotions should sell more.
-8. Stores open on the Christmas holiday should sell more.
-9. Stores should sell more over the years.
-10. Stores should sell more in the second half of the year.
-11. Stores should sell more after the 10th of each month.
-12. Stores should sell less on weekends.
-13. Stores should sell less during school holidays.
-
-Some of them might not be tested in advance for lack of information in this DataSet. Thus it can be tested in the next CRISP-DM circle.
-
-Below are the summary of three tested hypoteses.
-1. Stores with larger assortments should sell more -- TRUE
-
-![image](https://user-images.githubusercontent.com/73034020/180753446-e35fd0a4-9b15-44c5-80f7-3104ccbe1079.png)
-
-![image](https://user-images.githubusercontent.com/73034020/180751961-8b4593ec-df14-441b-afd7-b97414b57818.png)
-
-There is proportionally more sales in biggers assortments than the basic ones.
-
-1. Stores with larger assortments should sell more -- TRUE
-
-
+![image](https://user-images.githubusercontent.com/73034020/187725801-349dac8b-1d7d-48cc-89b0-6bf33b01e0f7.png)
 
 
 
