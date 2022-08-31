@@ -116,7 +116,7 @@ If the business team would prospect the first 40% of the entire clients base WIT
 
 If the business team would prospect the first 40% of the entire clients base WITH the model, it would have a profit of:  $ 30787938.75
 
-Therefore, the absolute monthly profit increase would be of $26186861, and the relative monthly profit increase would be of 569%)
+Therefore, the absolute monthly profit increase would be of $26186861, and the relative monthly profit increase would be of **569%**)
 
 ![image](https://user-images.githubusercontent.com/73034020/187796310-eedbd2f6-fc87-4e2b-856d-e559b2f738c5.png)
 
