@@ -123,7 +123,8 @@ Therefore, the absolute monthly profit increase would be of $26186861, and the r
 At the first moment, this increase may be astonishing and maybe doubtful, but in our scenario where there's a considerable lead cost and very few propense customers, it's feasible that a propensity ranked list increases the sales funnel efficiency and consequently increases considerably the profit.
 
 
-
+## 7). Deploy the model to Production.
+In progress...
 
 
 
