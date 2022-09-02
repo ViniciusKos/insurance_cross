@@ -122,6 +122,10 @@ Therefore, the absolute monthly profit increase would be of $26186861, and the r
 
 At the first moment, this increase may be astonishing and maybe doubtful, but in our scenario where there's a considerable lead cost and very few propense customers, it's feasible that a propensity ranked list increases the sales funnel efficiency and consequently increases considerably the profit.
 
+Overall, the model performed well (better than a simple average prediction), however following the CRISP methodology, if a new round is needed, it may be considered to train a new model or create new features. 
+
+Further details on business performance are available in the notebook.
+
 
 ## 7). Deploy the model to Production.
 In progress...
