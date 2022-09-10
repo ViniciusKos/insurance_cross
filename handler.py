@@ -1,6 +1,7 @@
-import requests, json, pickle
+import pickle, requests, json
 import pandas as pd
 from flask import Flask, request, Response
+from insurance import Insurance
 
 # loading model
 model = pickle.load( open(r'P:/Python/GitHub/insurance_cross/parameters/model.pkl', 'rb') )
@@ -8,7 +9,7 @@ model = pickle.load( open(r'P:/Python/GitHub/insurance_cross/parameters/model.pk
 # initialize API
 app = Flask( __name__ )
 
-@app.route( r'/Insurance/predict', methods=['POST'] )
+@app.route( r'/insurance/predict', methods=['POST'] )
 def insurance_predict():
     test_json = request.get_json()
    
@@ -41,4 +42,4 @@ def insurance_predict():
         return Response( '{}', status=200, mimetype='application/json' )
 
 if __name__ == '__main__':
-    app.run( '0.0.0.0' ,debug=True)
+    app.run( '' ,debug=True)
