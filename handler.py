@@ -1,10 +1,17 @@
 import pickle, requests, json
 import pandas as pd
 from flask import Flask, request, Response
-from insurance import Insurance
+from insurance import Insurance, data_cleaning, FeatureEngineering, BayesianEncoding, Rescaler
+from sklearn.base import BaseEstimator, TransformerMixin
+
+
 
 # loading model
 model = pickle.load( open(r'P:/Python/GitHub/insurance_cross/parameters/model.pkl', 'rb') )
+
+
+
+
 
 # initialize API
 app = Flask( __name__ )
