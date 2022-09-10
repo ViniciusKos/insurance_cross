@@ -41,40 +41,7 @@ class BayesianEncoding(BaseEstimator, TransformerMixin):
             X2[f'{i}']=X2[i].map(self.dic[i])
         return X2
 
-class Rescaler(TransformerMixin,BaseEstimator):
-    def __init__(self):
-        self.cols_robust=['annual_premium','policy_sales_channel']
-        self.cols_minmax=['region_code','age']
-        self.cols_standard=['vintage']
-        pass 
 
-    def fit(self, X,y=None):
-        rs = RobustScaler()
-        rs.fit( X[self.cols_robust].values )
-        pickle.dump( rs, open( f'parameters/{rs.__class__.__name__}.pkl', 'wb') )
-
-        mms=MinMaxScaler()
-        mms.fit( X[self.cols_minmax].values )
-        pickle.dump( mms, open( f'parameters/{mms.__class__.__name__}.pkl', 'wb') )
-
-        ss=StandardScaler()
-        ss.fit( X[self.cols_standard].values )
-        pickle.dump( ss, open( f'parameters/{ss.__class__.__name__}.pkl', 'wb') )
-
-        return self
-
-    def transform(self, X, y=None):
-        X2=X.copy()
-        rs=pickle.load(open(f"parameters/RobustScaler.pkl",'rb'))
-        mms=pickle.load(open(f"parameters/MinMaxScaler.pkl",'rb'))
-        ss=pickle.load(open(f"parameters/StandardScaler.pkl",'rb'))
-
-        X2[self.cols_robust]=rs.transform(X2[self.cols_robust])
-        X2[self.cols_minmax]=mms.transform(X2[self.cols_minmax])
-        X2[self.cols_standard]=ss.transform(X2[self.cols_standard])
-
-
-        return X2
 
 class Insurance( object ):
     def __init__( self ):
@@ -82,7 +49,9 @@ class Insurance( object ):
         self.fe = pickle.load( open( r'parameters/feature_engineering.pkl', 'rb') )
         self.oe=pickle.load( open(r'parameters/oe.pkl', 'rb') )
         self.be = pickle.load( open( r'parameters/bayesian_encoder.pkl', 'rb') ) 
-        self.rescaler = pickle.load( open( r'parameters/rescaler.pkl', 'rb') )
+        self.robust=pickle.load(open(r"parameters/RobustScaler.pkl",'rb'))
+        self.minmax=pickle.load(open(r"parameters/MinMaxScaler.pkl",'rb'))
+        self.standard=pickle.load(open(r"parameters/StandardScaler.pkl",'rb'))
 
 
         
@@ -104,7 +73,9 @@ class Insurance( object ):
 
         df3[['vehicle_age','gender','vehicle_damage']]=self.oe.transform(df3[['vehicle_age','gender','vehicle_damage']])
         df3[['policy_sales_channel','region_code']]=self.be.transform(df3[['policy_sales_channel','region_code']])
-        df3=self.rescaler.transform(df3)
+        df3[['annual_premium','policy_sales_channel']]=self.robust.transform(df3[['annual_premium','policy_sales_channel']])
+        df3[['region_code','age']]=self.minmax.transform(df3[['region_code','age']])
+        df3[['vintage']]=self.standard.transform(df3[['vintage']])
         df3=df3.fillna(0)
         df3=df3[['age', 'region_code', 'previously_insured', 'vehicle_age',
        'vehicle_damage', 'policy_sales_channel']]
