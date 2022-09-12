@@ -1,0 +1,11 @@
+id,gender,age,driving_license,region_code,previously_insured,vehicle_age,vehicle_damage,annual_premium,policy_sales_channel,vintage,prediction
+192150,Female,38,1,7.0,0,1-2 Year,Yes,37344.0,26.0,76,1
+189830,Male,51,1,36.0,0,1-2 Year,No,2630.0,156.0,264,0
+373009,Male,36,1,28.0,0,1-2 Year,Yes,35110.0,26.0,74,1
+266805,Female,38,1,50.0,0,1-2 Year,Yes,36430.0,152.0,26,1
+336526,Female,51,1,19.0,0,1-2 Year,Yes,38316.0,154.0,252,1
+301631,Male,52,1,28.0,0,1-2 Year,No,33212.0,124.0,23,0
+65127,Female,29,1,50.0,1,< 1 Year,No,36067.0,152.0,224,0
+14618,Female,24,1,36.0,0,< 1 Year,Yes,28944.0,160.0,194,0
+338570,Male,35,1,28.0,0,1-2 Year,Yes,57658.0,26.0,139,1
+141183,Male,44,1,39.0,0,1-2 Year,Yes,30014.0,124.0,250,1
