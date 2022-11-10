@@ -82,11 +82,10 @@ Below it's shown the intuition of these metrics and the F1-score formula.
 
 After the Hyperparameter tuning our final model has the metrics shown below (in houldout set).
 
-![image](https://user-images.githubusercontent.com/73034020/187790867-b897f565-16df-40ef-8197-3641fb3e7dab.png)
+![image](https://user-images.githubusercontent.com/73034020/201189172-303a2faa-45fb-4185-80ea-95fc5df06dc7.png)
 
 ### Cumulative Gain Curve
 
-Below, it's shown 
 
 ## 6). Business Impact
 
