@@ -91,7 +91,7 @@ Below, it's shown
 ## 6). Business Impact
 
 Disclaimer: For evaluation purposes, it was considered that the commercial/business team can reach 40% of the entire customer base. But according to the business context, this number can be lesser or greater.
-Also, it was considered that each lead has a cost of $250.
+Also, it was considered that each sales try has a cost of $15.
 
 How much the is model better than a random guess of whether or not a client will buy an insurance?
 
@@ -110,15 +110,16 @@ On the other hand, if the business team hadn't the model, the same aproach of pr
 ###  How much does the model increase the company's profit?
 
 The amount of leads needed to reach 40% of the customers it's 60978.
-Each lead has a cost of $250.
+Each lead has a cost of $15.
 
-If the business team would prospect the first 40% of the entire clients base WITHOUT the model, it would have a profit of:  $ 4601077.41
+If the business team would prospect the first 40% of the entire clients base WITHOUT the model, it would have a profit of:  $ 18.9M
 
-If the business team would prospect the first 40% of the entire clients base WITH the model, it would have a profit of:  $ 30787938.75
+If the business team would prospect the first 40% of the entire clients base WITH the model, it would have a profit of:  $ 45.1M
 
-Therefore, the absolute monthly profit increase would be of $26186861, and the relative monthly profit increase would be of **569%**)
+Therefore, the absolute monthly profit increase would be of $26.2M , and the relative monthly profit increase would be of **138%**)
 
-![image](https://user-images.githubusercontent.com/73034020/187796310-eedbd2f6-fc87-4e2b-856d-e559b2f738c5.png)
+![image](https://user-images.githubusercontent.com/73034020/201185958-aefd0be3-65a9-40a0-a446-c1fb599d4553.png)
+
 
 At the first moment, this increase may be astonishing and maybe doubtful, but in our scenario where there's a considerable lead cost and very few propense customers, it's feasible that a propensity ranked list increases the sales funnel efficiency and consequently increases considerably the profit.
 
