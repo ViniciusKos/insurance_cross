@@ -94,17 +94,19 @@ Also, it was considered that each sales try has a cost of $15.
 
 How much the is model better than a random guess of whether or not a client will buy an insurance?
 
-The chart below shows us that if the business team prospects,let's say, the first 40% customers, it will me 2.3 times more precise than a random guess.
+The chart below shows us that if the business team prospects,let's say, the first 40% customers, it will me 2.1 times more precise than a random guess.
 
-![image](https://user-images.githubusercontent.com/73034020/187791963-a5770f0b-a82b-4897-af0a-c3ec6cff36aa.png)
+![image](https://user-images.githubusercontent.com/73034020/201189374-ef7f9bae-dde9-4c1e-95bc-e632f60710ae.png)
+
 
 This can be translated into cost reduction. Let's say the company has a human sales channel, surely it has a cost for each lead. And each lead without a sale convertion is a loss. Thus, most of leads must be successful in order to maximize our profit.
 
 
-The chart below shows us that if the business team prospect the same first 40% customers it will reach 90% of all the propense clients thanks to the model propensity score.
-On the other hand, if the business team hadn't the model, the same aproach of prospecting randomly 40% customers, it will reach only 4,8% of all propense clients (40% times the real proportion of 12%)
+The chart below shows us that if the business team prospect the same first 40% customers it will reach 82% of all the propense clients thanks to the model propensity score.
+On the other hand, if the business team hadn't the model, the same aproach of prospecting randomly 40% customers, it will reach only 48% of all propense clients (40% times the real proportion of 12%)
 
-![image](https://user-images.githubusercontent.com/73034020/187791862-163d457f-9069-4721-af46-99c06c47d6b3.png)
+![image](https://user-images.githubusercontent.com/73034020/201189640-59bc46ec-cda7-4f8b-a2d1-a62fd681d6d8.png)
+
 
 ###  How much does the model increase the company's profit?
 
@@ -113,9 +115,9 @@ Each lead has a cost of $15.
 
 If the business team would prospect the first 40% of the entire clients base WITHOUT the model, it would have a profit of:  $ 18.9M
 
-If the business team would prospect the first 40% of the entire clients base WITH the model, it would have a profit of:  $ 45.1M
+If the business team would prospect the first 40% of the entire clients base WITH the model, it would have a profit of:  $ 39.4M
 
-Therefore, the absolute monthly profit increase would be of $26.2M , and the relative monthly profit increase would be of **138%**)
+Therefore, the absolute monthly profit increase would be of $26.2M , and the relative monthly profit increase would be of **109%**)
 
 ![image](https://user-images.githubusercontent.com/73034020/201185958-aefd0be3-65a9-40a0-a446-c1fb599d4553.png)
 
