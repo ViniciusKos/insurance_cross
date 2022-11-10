@@ -2,21 +2,23 @@ import pickle
 import pandas as pd
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
-from sklearn.preprocessing import StandardScaler, RobustScaler, MinMaxScaler
 from transformers import data_cleaning, FeatureEngineering, BayesianEncoding
+
+data_cleaning()
+FeatureEngineering()
+BayesianEncoding()
 
 class Insurance( object ):
     def __init__( self ):
 
-
+        self.robust=pickle.load(open(r"parameters/RobustScaler.pkl",'rb'))
+        self.minmax=pickle.load(open(r"parameters/MinMaxScaler.pkl",'rb'))
+        self.standard=pickle.load(open(r"parameters/StandardScaler.pkl",'rb'))
+        self.fe = pickle.load( open( r'parameters/feature_engineering.pkl', 'rb') )
         self.cleaner = pickle.load( open( r'parameters/data_cleaning.pkl', 'rb') )
         self.fe = pickle.load( open( r'parameters/feature_engineering.pkl', 'rb') )
         self.oe=pickle.load( open(r'parameters/oe.pkl', 'rb') )
         self.be = pickle.load( open( r'parameters/bayesian_encoder.pkl', 'rb') ) 
-        self.robust=pickle.load(open(r"parameters/RobustScaler.pkl",'rb'))
-        self.minmax=pickle.load(open(r"parameters/MinMaxScaler.pkl",'rb'))
-        self.standard=pickle.load(open(r"parameters/StandardScaler.pkl",'rb'))
-
 
         
     def data_cleaning( self, df1 ): 
