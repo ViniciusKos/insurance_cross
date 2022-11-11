@@ -130,8 +130,10 @@ Further details on business performance are available in the notebook.
 
 
 ## 7). Deploy the model to Production.
-In progress...
+The model was deployed on Google Cloud Platform through Flask and GCP Service "APP Engine".
 
+The Animation below shows a customer list being ordened by buying potential through a model call in Excel Sheets
+![insurance](https://user-images.githubusercontent.com/73034020/201436763-32984504-0aa9-43b2-8f17-56f6eb1bfb8f.gif)
 
 
 
