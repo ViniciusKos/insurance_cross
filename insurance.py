@@ -70,7 +70,7 @@ class Insurance( object ):
     
     def get_prediction( self, model, original_data, test_data ):
         # prediction
-        pred = model.predict_proba( test_data )[:,1]
+        pred = model.predict( test_data )
         
         # join pred into the original data
         original_data['prediction'] = pred
